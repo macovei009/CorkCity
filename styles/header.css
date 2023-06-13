@@ -1,3 +1,4 @@
+/* Styles for the navigation bar */
 nav{
     display: flex;
     align-items: center;
@@ -12,6 +13,7 @@ nav{
     z-index:999;
   
 }
+/* Styles for the logo */
 .logo{
     color: white;
     font-size: 28px;
@@ -27,10 +29,12 @@ nav{
     color: #006850;
     transition: .3s;
 }
+/* Styles for the logo color */
 .logo-color{
     color: #006850;
 }
 
+/* Styles for the navigation links */
 nav ul li{
     list-style-type: none;
     display: inline-block;
@@ -48,6 +52,7 @@ nav ul li a:hover{
     transition: .3s;
 }
 
+/* Styles for the buttons */
 button{
     border: none;
     background: #006850;
@@ -63,4 +68,71 @@ button:hover{
     cursor:pointer;
 }
 
+/* Styles for the header banner */
+.banner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styles for the logo in the header */
+  .logo {
+    font-size: 24px;
+  }
 
+  /* Styles for the toggle button in mobile view */
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 800px) {
+    /* Styles for the navigation in mobile view */
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    /* Display the toggle button */
+
+    .toggle-button {
+        display: flex;
+    }
+
+     /* Styles for the menu */
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .menu ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        text-align: center;
+    }
+
+    .menu ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
