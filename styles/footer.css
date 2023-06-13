@@ -1,3 +1,5 @@
+/* Styles for the footer section */
+
 .footer-section {
     background-image: linear-gradient(rgb(172, 164, 164), #006850);
     height: 200px; /* Adjust the height as needed */
@@ -6,6 +8,9 @@
     align-items: center;
     padding: 0 20px;
 }
+
+/* Styles for the footer card */
+
 .footer-card {
     width: fit-content;
     height: fit-content;
@@ -62,10 +67,15 @@
     fill: rgb(255, 255, 255);
   }
   
+  
+/* Styles for animated social SVG icons on hover */
+
   .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
   }
   
+  /* Keyframes for slide-in-top animation */
+
   @keyframes slide-in-top {
     0% {
       transform: translateY(-50px);
